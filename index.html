@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Rodrigo Ahumada">
+    <meta description="página dedicada a la historia de javascript  y sus funcionalidades">
+    <meta keywords="javascript, javascript history, js varibles, js, tipos de data js">
+    <link rel="icon" type="icon" href="assets/img/logo-js.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Javascript</title>
+</head>
+<body class="bg-dark">
+
+    <!-- BTN FUNCTION -->
+    <button onclick="topFunction()" id="myBtn" class="fs-3 px-4 py-2" title="Go to top">↑</button>   
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container">
+          <a class="navbar-brand text-white fw-bold" href="#"> <img class="logo-navbar" src="assets/img/logo-2-js.webp" alt="logo-2-js">JAVASCRIPT</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon text-white"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                <div class="btn-group dropstart" role="group">
+                  <button type="button" class="btn btn-js dropdown-toggle fw-bold" data-bs-toggle="dropdown" aria-expanded="false">
+                    ¿Que deseas saber?
+                  </button>
+                  <ul class="dropdown-menu text-end">
+                    <li><a class="dropdown-item" href="#que-es-javascript">¿Que es Javascript?</a></li>
+                    <li><a class="dropdown-item" href="#tipos-de-datos">Tipos de datos</a></li>
+                    <li><a class="dropdown-item" href="#contacto">Contacto</a></li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- CAROUSEL -->
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <img src="assets/img/carrousel-1.png" class="d-block carousel-imgs" alt="carousel1">
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="assets/img/carrousel-2.webp" class="d-block carousel-imgs" alt="carousel2">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- QUE ES JAVASCRIPT -->
+      <section id="que-es-javascript" class="container my-5">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                    <h1 class="mb-5 text-js text-center display-5 fw-bold">¿QUE ES JAVASCRIPT?</h1>
+                    <div class="card bg-transparent border-light" style="width: auto;">
+                        <div class="card-body">
+                          <p class="card-text text-white fw-regular que-es-javascript-text"><u>JavaScript</u> es uno de los lenguajes más populares en el mundo y durante la década del 2010 al 2020, fue el número uno sobre la tierra y se apoderó de casi todas las industrias del desarrollo de software. Todo se hacía con JavaScript e incluso, llegó a hablarse de la fatiga JavaScript. Pero sabías que este lenguaje, que llegó a dominar el mundo y es el único lenguaje en el desarrollo frontend (con el permiso de <u>Web Assembly</u>), ¿fue creado en apenas una semana?
+                          </p>
+                          <p class="card-text text-white fw-regular que-es-javascript-text">
+                            Además, ¿sabías que este lenguaje puso en guerra a dos empresas enormes y que gracias a JavaScript, se creó Firefox y Google Chrome? Aun así, JavaScript fue uno de los lenguajes más vilipendiados, insultados y odiados por los programadores por años (más que PHP). Incluso, durante casi diez años, su desarrollo estuvo completamente abandonado.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="text-center">
+                        <a href="https://keepcoding.io/blog/la-historia-de-javascript/" target="_blank"><button type="button" class="btn btn-js mt-5 px-5 py-3 text-grey fw-bold fs-5" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="CLICKEA PARA IR A LA FUENTE">
+                          Fuente
+                        </button></a>
+                      </div>
+                      
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                    <h1 id="que-es-javascript" class="mb-5 text-js text-center display-5 fw-bold">HISTORIA</h1>
+                    <div class="card bg-transparent border-light" style="width: auto;">
+                        <div class="card-body">
+                          <p class="card-text text-white fw-regular">El origen javascript surge a partir de un navegador que actualmente no existe: <u>NetScape</u>. En 1995, Netscape se dio cuenta de que, cuando tenía algún documento HTML, no podía interactuar con lo que hacía el usuario. Es decir, lo único que podía hacer el navegador era esperar a recibir unos datos y luego enviarlos, a modo de formulario. Además, podía darle ciertos aspectos de diseño, como el alto y ancho, pero con muy poca versatilidad.</p>
+
+                          <p class="card-text text-white fw-regular">Entonces, fue Brendan Eich quien desarrollo Javascript para NetScape. Este lenguaje de programación le da muchas más posibilidades a los navegadores. Con JavaScript podemos, por ejemplo, crear controles en la búsqueda de un contenido para que solo devuelva resultados con contenido, no textos vacíos.</p>
+                            
+                          <p class="card-text text-white fw-regular">El siguiente momento importante en la historia de JavaScript es la creación del elemento XML HttpRequest por parte de <u>Microsoft</u> en 1998. Este elemento viene a ser el padre de AJAX y nos permite cargar contenido o interactuar con el backend sin tener que volver a cargar la totalidad de la página web.</p>
+                            
+                          <p class="card-text text-white fw-regular">A lo largo de los años, se continuó hablando de JavaScript y, en el 2000, Douglas Crockford inventó el documento JSON, una forma de estandarizar objetos en JavaScript. En 2004, Gmail empezó a utilizar JavaScript e incorporó AJAX masivamente para hacer sus procesos más eficaces.</p>
+                            
+                          <p class="card-text text-white fw-regular">Llegados a este punto, JavaScript era tan útil que, en 2006, John Resig creó la librería JQuery, que nos permite reducir la complejidad de la sintaxis de JavaScript.</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="row mt-5 justify-content-center">
+              <div class="col-10 col-sm-6 col-md-3 col-lg-2 card text-bg-light p-0 mx-5 my-3">
+                <img src="assets/img/logo-js.png" class="card-img" alt="...">
+                <div class="card-img">
+                  <h5 class="card-title text-center">Javascript</h5>
+                </div>
+              </div>
+              <div class="col-10 col-sm-6 col-md-3 col-lg-2 card text-bg-light p-0 mx-5 my-3">
+                <img src="assets/img/web-assembly-logo.png" class="card-img" alt="...">
+                <div class="card-img">
+                  <h5 class="card-title text-center">Web Assembly</h5>
+                </div>
+              </div>
+              <div class="col-10 col-sm-6 col-md-3 col-lg-2 card text-bg-light p-0 mx-5 my-3">
+                <img src="assets/img/netscape-logo.png" class="card-img" alt="...">
+                <div class="card-img">
+                  <h5 class="card-title text-center">Netscape</h5>
+                </div>
+              </div>
+              <div class="col-10 col-sm-6 col-md-3 col-lg-2 card text-bg-light p-0 mx-5 my-3">
+                <img src="assets/img/microsoft-logo.png" class="card-img" alt="...">
+                <div class="card-img">
+                  <h5 class="card-title text-center">Microsoft</h5>
+                </div>
+              </div>
+            </div>
+          </section>
+
+      <!-- TIPOS DE DATOS-->
+      <section id="tipos-de-datos" class="container mb-5">
+          <h2 class="mb-5 ms-4 text-js text-center display-5 fw-bold">Tipos de datos</h2>
+          <div class="card bg-transparent border-light" style="width: auto;">
+            <div class="card-body">
+              <p class="card-text text-white fw-regular">Sin duda alguna, los datos son uno de los pilares fundamentales dentro de los lenguajes de programación, ya que son ellos quienes transitan por el paradigma «entrada, proceso y salida» teniendo así datos de entrada - procesamiento de los datos - datos de salida. Es por ello que cada lenguaje de programación tiene estructuras o tipos de datos integrados que permiten almacenar y abstraer los datos usados en cada programa.</p>
+              <p class="card-text text-white fw-regular">JavaScript tiene la característica de ser un lenguaje débilmente tipado con tipado dinámico, es decir, que <b>todos los tipos de datos se pueden asignar o reasignar a las variables que los almacenan</b>. Por ejemplo, una variable que almacena un dato numérico puede posteriormente almacenar un dato de tipo booleano.</p>
+              <p class="card-text text-white fw-regular">De acuerdo con el último estándar ECMAScript, existen nueve tipos de datos:</p>
+              <ul class="card-text text-white fw-regular">
+                <li>Undefined</li>
+                <li>Boolean</li>
+                <li>Number</li>
+                <li>String</li>
+                <li>BigInt</li>
+                <li>Symbol</li>
+                <li>Null</li>
+                <li>Object</li>
+                <li>Function</li>
+              </ul>
+            </div>
+            <img src="assets/img/code.png" class="mb-4" alt="">
+          </div>
+      </section>
+
+      <!-- FORM DE CONTACTO -->
+      <section class="container mb-5">
+        <h2 id="contacto" class="text-js text-center my-2 py-2 fw-bold">¿Quieres saber más?</h2>
+        <h4 id="contacto" class="text-js text-center my-2 py-2 fw-bold">Contáctate con nosotros!</h4>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label text-js fw-regular">Nombre</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label text-js fw-regular">Asunto</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label text-js fw-regular">Mensaje</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+        </div>
+        <button id="enviarMensaje" class="btn btn-js fw-bold">Enviar</button>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="bg-secondary py-4">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-5">
+                <h5 class="text-white m-0 footer-js">Todos los derechos reservados®</h5>
+              </div>
+              <div class="col-3">
+                <h6 class="text-white m-0 footer-js">Páginas oficiales:</h6>
+              </div>
+                  <div class="col-3">
+                    <div class="row justify-content-end footer-js-img">
+                      <div class="col-4"><a href="https://www.javascript.com/" target="_blank"><img style="width: 60%;" src="assets/img/logo-js.png" alt="logo-js"></a></div>
+                      <div class="col-4"><a href="https://webassembly.org/" target="_blank"><img style="width: 60%;" src="assets/img/web-assembly-logo.png" alt="logo-wa"></a></div>
+                      <div class="col-4"><a href="https://www.microsoft.com/es-cl/" target="_blank"><img style="width: 60%;" src="assets/img/netscape-logo.png" alt="logo-netscape"></a></div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+      </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
